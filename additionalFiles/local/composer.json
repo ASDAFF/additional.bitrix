@@ -1,0 +1,31 @@
+{
+  "name": "developer_name/project_name",
+  "description": "project_name - project_description powered by developer_full_name",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Name LastName",
+      "email": "email"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "ProjectName\\": "src/"
+    }
+  },
+  "extra": {
+    "installer-paths": {
+      "modules/{$name}/": ["type:bitrix-module"]
+    }
+  },
+  "require": {
+    "vf92/bitrix-base": "dev-master",
+    "andreyryabin/sprint.migration": "dev-master",
+    "webarchitect609/bitrix-user-type": "^0.1",
+    "webarchitect609/bitrix-iblock-property-type": "^1.0.3",
+    //    "twig/twig": "^1.0",
+    //    "php-amqplib/rabbitmq-bundle": "~1.13.0",
+    //    "bitrix": ">=16.5.0" // желателен битрикс выше 17.5.2, чтобы работало where в orm
+  }
+}

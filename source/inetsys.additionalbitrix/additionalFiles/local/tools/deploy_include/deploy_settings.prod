@@ -1,0 +1,11 @@
+GIT_BRANCH="master"
+
+PHP_PATH="/opt/php56/bin/php"
+INSTALLER="apt"
+
+# расположение композера относительно корня сайта
+COMPOSER_DIRECTORY="local"
+
+# настройка миграций
+MIGRATE_PATH="local/tools/migrate"
+MIGRATE_MODULE_NAME="sprint.migration"
